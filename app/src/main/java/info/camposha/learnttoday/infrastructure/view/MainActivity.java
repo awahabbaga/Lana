@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerListene
         String year = String.valueOf(dateSelected.getYear());
         String month = String.valueOf(dateSelected.getMonthOfYear());
         String day = String.valueOf(dateSelected.getDayOfMonth());
-        if(dateSelected.getMonthOfYear() < 10){
+        if(dateSelected.getMonthOfYear() <= 12){
             mv.SELECTED_DATE = year + "-0" + month + "-" + day;
         }else{
             mv.SELECTED_DATE = year + "-" + month + "-" + day;
